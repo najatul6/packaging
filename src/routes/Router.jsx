@@ -4,11 +4,11 @@ import Home from "../pages/Home";
 import Services from "../pages/Services";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import Dashboard from "../pages/Dashboard";
-import PrivateRoute from "./PrivateRoute";
-import PublicRoute from "./PublicRoute";
+// import Login from "../pages/Login";
+// import Register from "../pages/Register";
+// import Dashboard from "../pages/Dashboard";
+// import PrivateRoute from "./PrivateRoute";
+// import PublicRoute from "./PublicRoute";
 
 const Router = createBrowserRouter([
   {
@@ -21,21 +21,21 @@ const Router = createBrowserRouter([
       { path: "contact", Component: Contact },
 
       // 🔓 Public-only routes
-      {
-        Component: PublicRoute,
-        children: [
-          { path: "login", Component: Login },
-          { path: "register", Component: Register },
-        ],
-      },
+      // {
+      //   Component: PublicRoute,
+      //   children: [
+      //     { path: "login", Component: Login },
+      //     { path: "register", Component: Register },
+      //   ],
+      // },
 
       // 🔐 Private routes
-      {
-        Component: PrivateRoute,
-        children: [
-          { path: "dashboard", Component: Dashboard },
-        ],
-      },
+      // {
+      //   Component: PrivateRoute,
+      //   children: [
+      //     { path: "dashboard", Component: Dashboard },
+      //   ],
+      // },
     ],
   },
 ]);
